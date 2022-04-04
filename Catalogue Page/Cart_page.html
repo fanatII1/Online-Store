@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--BOOTSTRAP 4 CDN AND EXTERNAL STYLESHEET LINK-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="cart.css" />
+    <!--FONT AWESOME ICONS-->
+    <script src="https://kit.fontawesome.com/1923f6977c.js" crossorigin="anonymous"></script>
+
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section id="container">
+        <!--container for the car-form-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    
+                    <!-- Price and Total Cost-->
+                    <input type="text" value="" id="totalPrice">
+                    <br/>
+                    <label for="items">Items:</label>
+                    <br/>
+                    <select id="cartItems">
+
+                    </select>
+                    <br/>
+
+                    <!--COLLECTION OR DELIVERY-->
+                    <label for="collection" id="collectionLabel">Collection Type: </label>
+                    <br/>
+                    <select id="collection">
+                        <option value="collect">COLLECTION</option>
+                        <option value="deliver">DELIVERY</option>
+                    </select>
+                    <br/>
+
+                    <label for="discount" id="discountLabel">Discount Coupons:</label>
+                    <br/>
+                    <input type="text" placeholder="Price" id="discount" value="0" readonly>
+                    <br/>
+
+                    <!--Forms for delivery options-->
+                    <label for="delivery-options">Delivery options:</label>
+                    <br/>
+                    <select id="delivery-options">
+                        <option value="">--Delivery type--</option>
+                        <option value="less_than">Less than 100KM away</option>
+                        <option value="more_than">More than 100KM away</option>
+                    </select>
+                    <br/>
+
+                    <input type="submit" value="Confirm Order" id="confirm" onclick="confirmOrder()">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--JAVSCRIPT-->
+    <script src="shoppingCart2.js"></script>
+    
+</body>
+
+</html>

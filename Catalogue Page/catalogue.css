@@ -1,0 +1,211 @@
+html {
+    background: red;
+    font-size: 1.0499em;
+    scroll-behavior: smooth;
+}
+
+
+/*styling the nav and everything inside*/
+nav {
+    background: rgb(0 0 0 / 74%);
+}
+
+/*making sure that the nav sticks*/
+.navbar-expand-lg{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-weight: bolder;
+    border: 6px solid #fff;
+    border-radius: 25px 0 25px 0;
+    padding: 5px;
+    transition: .4s;
+}
+
+.navbar-brand:hover {
+    color: rgb(235, 154, 4);
+}
+
+#navCollapse ul li a {
+    font-weight: 600;
+    color: white;
+    transition: .4s;
+}
+
+#navCollapse ul li a:hover {
+    color: rgb(235, 154, 4);
+    padding-left: 5px;
+    background-color: #0000001a;
+    border-radius: 5px;
+}
+
+.fa-bars {
+    color: orange;
+}
+
+/* shopping-cart */
+.fa-solid,
+.fas {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-top: 80%;
+    color: white;
+}
+
+/*hovering over the cart*/
+.fa-solid:hover, .fas:hover{
+    color: orange;
+}
+
+
+/* styling the firsrt section element(id=page-image-container*/
+#page-image-container {
+    width: 98.5vw;
+    height: 60vh;
+    position: relative;
+}
+
+.page-main-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 600;
+}
+
+#pages-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* STYLES FROM THIS POINT FOWARD ARE SECTIONS OF THE MAIN CONTAINER*/
+/*making sure that the container-fluid has borders around it*/
+.drink-section-container {
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px #00000063;
+}
+
+.row {
+    padding-bottom: 3%;
+}
+
+/*making sure that the columns of th main row are under each other*/
+#drinks-main-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#drinks-section-heading {
+    font-size: 2em;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 2%;
+}
+
+#drinks-column1,
+#drinks-column2 {
+    margin: 0 auto;
+}
+
+
+/*selecting all images of the main content(images that are inside the nested columns)*/
+[class*=column-image] {
+    display: block;
+    width: 100%;
+    box-shadow: 10px 10px 5px #00000063, -10px 10px 5px #00000063;
+    height: 90%;
+}
+
+/* targeting all elements(in this case the container of the images) with col-lg-4 class name.
+Declared position relative so that the it can work in relation with the image-overlay class*/
+[class*=col-lg-4] {
+    margin-top: 5%;
+    transition: .4s;
+    position: relative;
+}
+
+/* OVERLAY COLUMN */
+.image-overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #5c5c5c52;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+
+[class*=col-lg-4]:hover .image-overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+/*targeting all the buttons that add to the cart*/
+[class*=addToCart]{
+    display: block;
+    margin: 2% 0;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    background-color: orange;
+    color: white;
+    font-weight: 500;
+    transition: 0.4s;
+}
+
+[class*=addToCart]:hover{
+    transform: scale(1.05);
+}
+
+
+h6 {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/*STYLING THE FOOTER */
+footer {
+    background: black;
+    color: #fff;
+}
+
+.contact-list {
+    list-style-type: square;
+}
+
+.contact-list li a {
+    color: #fff;
+}
+
+.footer-column1,
+.footer-column2,
+.footer-column3 {
+    margin-top: 2%;
+    transition: .4s;
+}
+
+.footer-column1:hover,
+.footer-column2:hover,
+.footer-column3:hover {
+    background-color: #d8d8d82e;
+    border-radius: 5px;
+}

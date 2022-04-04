@@ -1,0 +1,145 @@
+html,body{
+    background-color: #fff;
+    font-size: 1.0499em;
+    background: url("../IMAGES/HOMEPAGE_IMAGES/beach.jpg") no-repeat fixed center;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+
+/*styling the nav and everything inside*/
+nav{
+    background: rgba(0, 0, 0, 0.39);
+    position: fixed;
+    top: 0;
+}
+
+.navbar-brand{
+    color: #fff;
+    font-weight: bolder;
+    border: 6px solid #fff;
+    border-radius: 25px 0 25px 0;
+    padding: 5px;
+    transition: .4s;
+}
+
+.navbar-brand:hover{
+    color: rgb(235, 154, 4);
+}
+
+#navCollapse ul li a{
+    font-weight: 600;
+    color: white;
+    transition: .4s;
+}
+
+#navCollapse ul li a:hover{
+    color: rgb(235, 154, 4);
+    padding-left: 5px;
+    background-color: #0000001a;
+    border-radius: 5px;
+}
+
+.fa-bars{
+    color: orange;
+}
+
+
+/* STYLING THE MAIN CONTENT OF THE PAGE */
+#welcome{
+    padding: 150px 10px;
+    background-clip: padding-box;
+    background-color: #00000052;
+}
+
+.row{
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+.container-fluid{
+    padding:0;
+} 
+
+#order-button{
+    background: #74747452;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+#order-button:hover{
+    transform: scale(1.2);
+}
+
+#order-button a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+#intro-description{
+    transition: .3s;
+}
+
+#intro-description:hover{
+    transform: scale(1.02);
+}
+
+
+#enjoyrow, #delivery-row, #location{
+    width: 98%;
+    height: auto;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #000;
+    margin: 2% 0 0 0;
+}
+
+/* responsive images*/
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px 0 0 20px;
+}
+
+/*styling mainly the the columns of the rows of the page*/
+#enjoy-column1, #delivery-colum1, #location-column1{
+    padding-left: 0;
+}
+
+#enjoy-column2, #delivery-column2, #location-column2{
+    padding-top: 20px;
+}
+
+.enjoy-text, .delivery-text{
+    line-height: 2.5;
+}
+
+
+.store-image{
+    border-radius: 20px;
+}
+
+footer{
+    background: black;
+    color: #fff;
+    margin-top: 2%;
+    padding-top: 2%;
+}
+
+.contact-list{
+    list-style-type: square;
+}
+
+.contact-list li a{
+    color: #fff;
+}
+
+.footer-column1, .footer-column2, .footer-column3{
+    transition: .4s;
+}
+.footer-column1:hover, .footer-column2:hover, .footer-column3:hover{
+    background-color: #d8d8d82e;
+    border-radius: 5px;
+}
