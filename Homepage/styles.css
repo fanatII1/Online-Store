@@ -13,13 +13,18 @@ nav{
     top: 0;
 }
 
+.navbar-expand-lg {
+    position: sticky;
+    top: 0;
+}
+
 .navbar-brand{
     color: #fff;
     font-weight: bolder;
     border: 6px solid #fff;
     border-radius: 25px 0 25px 0;
     padding: 5px;
-    transition: .4s;
+    transition: .4;
 }
 
 .navbar-brand:hover{
